@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+			#container
+			{
+				margin-right:auto; /*center container with margins left & right set to auto*/
+				margin-left:auto;
+				width:960px;	/*to center an element it must have a width*/
+				border-radius: 10px;
+				padding: 10px;
+				font-size: 0; /* for inline-block spacing issues*/
+				padding-top: 10px;
+			}
+			.box{
+				position: relative;		/*Must be relative*/
+				width: 100%;
+				background-color: #81BBC9;
+				margin-bottom: 10px;
+				border-radius: 10px;
+				font-family: Roboto;
+				font-size: 20px;
+				text-align: center;
+				padding: 30px 0;
+				padding-top: 100px;
+			}
+			.sidebar{
+				box-sizing:border-box;
+				display: inline-block;
+				width:470px;
+				margin-right: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 150px;
+			}
+
+			.content{
+				box-sizing:border-box;
+				display: inline-block;
+				width:470px;
+				margin-left: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				position: relative;
+				padding-top: 150px;
+			}
+			#toTopRight{
+				position: absolute; 	/* Absolute Link */
+				bottom:0;				/* Offset however we wish*/
+				right:-80px;
+			}
+			#toTopLeft{
+				position: absolute; 	/* Absolute Link */
+				bottom:0;				/* Offset however we wish*/
+				left:-80px;
+			}
+			p{
+				padding-bottom: 50px;
+				bottom-margin: 50px;
+			}
+
+			#header {
+				position: fixed;
+				z-index: 100;
+				margin-right:auto; /*center container with margins left & right set to auto*/
+				margin-left:auto;
+				width:960px;	/*to center an element it must have a width*/
+				border-radius: 10px;
+
+			}
+			
+
+			
+
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+
+			<div id="header" class="box"> <h1>Header</h1>
+			</div>
+			<div class="sidebar">
+			<div class="box">
+				<h2>Sidebar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+
+			</div></div>
+
+			<div class="content">
+			<div class="box">
+				<h2>Content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+				
+			</div></div>
+			
+			<div class="sidebar">
+			<div class="box">
+				<h2>Sidebar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+
+			</div></div>
+			<div class="content">
+			<div class="box">
+				<h2>Content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+				<a href="#" alt="Link to top"><img id="toTopRight" src="arrow.png"></a>
+			</div></div>
+			<div id="footer" class="box"><h2>Footer</h2>
+			</div>
+
+		</div>
+	</body>
+</html>
